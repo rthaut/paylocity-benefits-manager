@@ -20,13 +20,15 @@ This is a Next.js application with a demo app for managing and reviewing employe
 
 ### Things I Would Do Next
 
-1. Explore moving the inline forms (especially for editing dependents) into modals, or condense them down to better fit into the space vertically
+1. Explore moving the inline forms (especially for editing dependents) into modals, or condense them down to better fit into the space vertically so the layout doesn't shift as much
 2. Expose the discount information inline for dependents (likely next to the relationship badges)
-3. Add in some tests
+3. Get rid of some state (`useState`) where possible
+    - Especially for showing the employee drawer, I **really** should have used a query param to set the employee ID in the URL used that to show/hide the drawer
+4. Add in some tests
     - Since I'm working as if I don't control the base components, I wouldn't test those, but either the `company-context` or the `employee-table` would be good places to start  
-4. Mobile view for the employee-table, likely collapsing/hiding some columns
-5. Pagination for the employee-table
-6. Add charts/graphs to the company dashboard
+5. Mobile view for the employee-table, likely collapsing/hiding some columns
+6. Pagination for the employee-table
+7. Add charts/graphs to the company dashboard
 
 * * *
 
