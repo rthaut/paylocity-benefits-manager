@@ -213,7 +213,11 @@ export function EmployeeDrawer({
             <DeleteEmployeeButton
               employee={employee}
               onDelete={() => onClose()}
-            />
+            >
+              <Button variant="destructive" className="w-full">
+                Delete {employee.name}
+              </Button>
+            </DeleteEmployeeButton>
           </SheetFooter>
         </div>
       </SheetContent>
